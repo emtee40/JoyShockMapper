@@ -515,7 +515,7 @@ int pressMouse(WORD vkKey, bool isPressed)
 // send key press
 int pressKey(KeyCode vkKey, bool pressed)
 {
-	if (vkKey == 0)
+	if (vkKey.code == 0)
 		return 0;
 	if (vkKey.code <= V_WHEEL_DOWN)
 	{
@@ -583,7 +583,7 @@ BOOL ConsoleCtrlHandler(DWORD)
 };
 
 // just setting up the console with standard stuff
-void initConsole(std::function<void()>)
+void initConsole()
 {
 }
 
@@ -707,6 +707,10 @@ DWORD ShowOnlineHelp()
 }
 
 void HideConsole()
+{
+}
+
+void UnhideConsole()
 {
 }
 

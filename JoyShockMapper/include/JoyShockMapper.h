@@ -5,6 +5,7 @@
 
 #include <map>
 #include <functional>
+#include <string>
 
 // This header file is meant to be included among all core JSM source files
 // And as such it should contain only constants, types and functions related to them
@@ -17,6 +18,7 @@ typedef const string &in_string;
 // Reused OS typedefs
 typedef unsigned short WORD;
 typedef unsigned long DWORD;
+typedef unsigned char UCHAR;
 
 // https://docs.microsoft.com/en-us/windows/win32/inputdev/virtual-key-codes
 // Only use undefined keys from the above list for JSM custom commands

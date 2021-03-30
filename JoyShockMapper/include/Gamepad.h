@@ -1,15 +1,16 @@
 #pragma once
 
 #include "JoyShockMapper.h"
+#include <memory>
 
 // Forward Declare and typedefs
 typedef struct _VIGEM_TARGET_T *PVIGEM_TARGET;
 typedef struct _VIGEM_CLIENT_T *PVIGEM_CLIENT;
 typedef struct _XUSB_REPORT XUSB_REPORT;
 typedef struct _DS4_REPORT DS4_REPORT;
-typedef enum _VIGEM_ERRORS VIGEM_ERRORS;
 
 #if defined(WIN32)
+typedef enum _VIGEM_ERRORS VIGEM_ERRORS;
 #define VIGEM_CALLBACK _stdcall
 #else
 #define VIGEM_CALLBACK
