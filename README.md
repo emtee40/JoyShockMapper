@@ -107,10 +107,11 @@ In order to build on Linux, the following dependencies must be met, with their r
 - libevdev
 - libusb
 - SDL2
+- hidapi
 
 ####Distribution-Specific Package Names:
 
-* Fedora: ```SDL2-devel libappindicator-gtk3-devel libevdev-devel gtk3-devel libusb-devel```
+* Fedora: ```SDL2-devel libappindicator-gtk3-devel libevdev-devel gtk3-devel libusb-devel hidapi-devel```
 * Please provide an issue report or pull request to have additional library lists added.
 
 Due to a [bug](https://stackoverflow.com/questions/49707184/explicit-specialization-in-non-namespace-scope-does-not-compile-in-gcc) in GCC, the project in its current form will only build with Clang.
